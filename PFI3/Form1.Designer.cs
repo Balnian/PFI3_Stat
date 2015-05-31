@@ -42,6 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.PBX_Drawing = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,15 +192,23 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(-9, 230);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 13);
+            this.label4.Size = new System.Drawing.Size(211, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "_______________________________________";
+            this.label4.Text = "__________________________________";
+            // 
+            // PBX_Drawing
+            // 
+            this.PBX_Drawing.Location = new System.Drawing.Point(207, 12);
+            this.PBX_Drawing.Name = "PBX_Drawing";
+            this.PBX_Drawing.Size = new System.Drawing.Size(339, 298);
+            this.PBX_Drawing.TabIndex = 9;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(214, 318);
+            this.ClientSize = new System.Drawing.Size(562, 318);
+            this.Controls.Add(this.PBX_Drawing);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BTN_Clear);
             this.Controls.Add(this.label3);
@@ -235,6 +244,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BTN_Clear;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel PBX_Drawing;
     }
 }
 
