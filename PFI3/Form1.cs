@@ -104,5 +104,51 @@ namespace PFI3
                 g.Dispose();
             }
         }
+
+        //générateur de position
+        private double Generateur(double min,double max)
+        {
+            Random random = new Random();
+            return random.Next((int)(min*100),(int)(max*100+1))/100;
+        }
+        //vérifie si les coordonné sont sous la courbe selon l'équation
+        // 0: f1(x)
+        // 1: f2(x)
+        // 2: f3(x)
+        // 3: f4(x)
+        // 4: f5(x)
+        private bool estSousLaCourbe(int numEquation, double x, double y)
+        {
+            double carry = 0;
+            switch(numEquation)
+            {
+                case 0:
+                    carry = Math.Pow(x,2)-16*x+63;
+                    
+                    return y<=-Math.Pow(carry,(double)1/3)+4;
+
+                    break;
+                case 1:
+                    return y <= 3*Math.Pow((double)(x-7)/5,5)-5*Math.Pow((double)(x-7)/5,3)+3;
+                    break;
+                case 2:
+                    return y <= (double)(-1 / 3) * Math.Pow(x - 6, 2) + 12;
+                    break;
+                case 3:
+                    return y <= x + Math.Sin(x);
+                    break;
+                case 4:
+                    return y <= Math.Cos(x) + 3;
+                    break;
+                default:
+                    return false;
+                    break;
+            }
+        }
+
+        private void BTN_Calculer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
