@@ -91,17 +91,89 @@ namespace PFI3
 
         private void BTN_Clear_Click(object sender, EventArgs e)
         {
-            //Dont mind me just a test
             TXB_A.Clear();
             TXB_B.Clear();
+        }
 
-            RDB_F1.Checked = RDB_F2.Checked = RDB_F3.Checked = RDB_F4.Checked = RDB_F5.Checked = false;
-
-            for (int i = 0; i < 1000; i++)
+        private void BTN_Calculer_Click(object sender, EventArgs e)
+        {
+            if (TXB_A.Text != "" && TXB_B.Text != "")
             {
-                g = PBX_Drawing.CreateGraphics();
-                g.DrawEllipse(pen1, i, (int)(Math.Cos(i)+3), 3, 3);
-                g.Dispose();
+                if (RDB_F1.Checked)
+                {
+
+                }
+                else if (RDB_F2.Checked)
+                {
+
+                }
+                else if (RDB_F3.Checked)
+                {
+
+                }
+                else if (RDB_F4.Checked)
+                {
+
+                }
+                else if (RDB_F5.Checked)
+                {
+
+                }
+            }
+            else
+            {
+                if(TXB_A.Text == "")
+                {
+                    TXB_A.ForeColor = Color.IndianRed;
+                    label1.ForeColor = Color.IndianRed;
+                    TXB_A.Text = "Veuillez entrer une valeur";
+                }
+                if (TXB_B.Text == "")
+                {
+                    TXB_B.ForeColor = Color.IndianRed;
+                    label2.ForeColor = Color.IndianRed;
+                    TXB_B.Text = "Veuillez entrer une valeur";
+                }
+            }
+        }
+
+        private void TXB_A_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(TXB_A.Text == "Veuillez entrer une valeur")
+            {
+                TXB_A.Text = "";
+                label1.ForeColor = Color.Black;
+                TXB_A.ForeColor = Color.Black;
+            }
+        }
+
+        private void TXB_B_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (TXB_B.Text == "Veuillez entrer une valeur")
+            {
+                TXB_B.Text = "";
+                label2.ForeColor = Color.Black;
+                TXB_B.ForeColor = Color.Black;
+            }
+        }
+
+        private void TXB_A_Leave(object sender, EventArgs e)
+        {
+            if (TXB_A.Text == "")
+            {
+                TXB_A.ForeColor = Color.IndianRed;
+                label1.ForeColor = Color.IndianRed;
+                TXB_A.Text = "Veuillez entrer une valeur";
+            }
+        }
+
+        private void TXB_B_Leave(object sender, EventArgs e)
+        {
+            if (TXB_B.Text == "")
+            {
+                TXB_B.ForeColor = Color.IndianRed;
+                label2.ForeColor = Color.IndianRed;
+                TXB_B.Text = "Veuillez entrer une valeur";
             }
         }
     }

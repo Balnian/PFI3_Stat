@@ -42,7 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.PBX_Drawing = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,6 +129,7 @@
             this.BTN_Calculer.TabIndex = 1;
             this.BTN_Calculer.Text = "Calculer";
             this.BTN_Calculer.UseVisualStyleBackColor = true;
+            this.BTN_Calculer.Click += new System.EventHandler(this.BTN_Calculer_Click);
             // 
             // TXB_A
             // 
@@ -138,6 +138,8 @@
             this.TXB_A.Name = "TXB_A";
             this.TXB_A.Size = new System.Drawing.Size(166, 20);
             this.TXB_A.TabIndex = 2;
+            this.TXB_A.Leave += new System.EventHandler(this.TXB_A_Leave);
+            this.TXB_A.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TXB_A_MouseDown);
             // 
             // TXB_B
             // 
@@ -146,6 +148,8 @@
             this.TXB_B.Name = "TXB_B";
             this.TXB_B.Size = new System.Drawing.Size(166, 20);
             this.TXB_B.TabIndex = 3;
+            this.TXB_B.Leave += new System.EventHandler(this.TXB_B_Leave);
+            this.TXB_B.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TXB_B_MouseDown);
             // 
             // label1
             // 
@@ -192,23 +196,15 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(-9, 230);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(211, 13);
+            this.label4.Size = new System.Drawing.Size(241, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "__________________________________";
-            // 
-            // PBX_Drawing
-            // 
-            this.PBX_Drawing.Location = new System.Drawing.Point(207, 12);
-            this.PBX_Drawing.Name = "PBX_Drawing";
-            this.PBX_Drawing.Size = new System.Drawing.Size(339, 298);
-            this.PBX_Drawing.TabIndex = 9;
+            this.label4.Text = "_______________________________________";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 318);
-            this.Controls.Add(this.PBX_Drawing);
+            this.ClientSize = new System.Drawing.Size(215, 318);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BTN_Clear);
             this.Controls.Add(this.label3);
@@ -244,7 +240,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BTN_Clear;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel PBX_Drawing;
     }
 }
 
