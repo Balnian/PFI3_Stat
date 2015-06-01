@@ -42,7 +42,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.PBX_Drawing = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -148,6 +147,8 @@
             this.TXB_A.Name = "TXB_A";
             this.TXB_A.Size = new System.Drawing.Size(220, 22);
             this.TXB_A.TabIndex = 2;
+            this.TXB_A.Leave += new System.EventHandler(this.TXB_A_Leave);
+            this.TXB_A.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TXB_A_MouseDown);
             // 
             // TXB_B
             // 
@@ -157,6 +158,8 @@
             this.TXB_B.Name = "TXB_B";
             this.TXB_B.Size = new System.Drawing.Size(220, 22);
             this.TXB_B.TabIndex = 3;
+            this.TXB_B.Leave += new System.EventHandler(this.TXB_B_Leave);
+            this.TXB_B.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TXB_B_MouseDown);
             // 
             // label1
             // 
@@ -208,9 +211,9 @@
             this.label4.Location = new System.Drawing.Point(-12, 283);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(280, 17);
+            this.label4.Size = new System.Drawing.Size(241, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "__________________________________";
+            this.label4.Text = "_______________________________________";
             // 
             // PBX_Drawing
             // 
@@ -262,7 +265,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BTN_Clear;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel PBX_Drawing;
     }
 }
 
