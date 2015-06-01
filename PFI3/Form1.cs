@@ -25,8 +25,8 @@ namespace PFI3
         {
             label1.Enabled = 
             label2.Enabled = 
-            TXB_A.Enabled = 
-            TXB_B.Enabled = 
+            NUD_A.Enabled = 
+            NUD_B.Enabled = 
             BTN_Calculer.Enabled = 
             (RDB_F1.Checked ||
              RDB_F2.Checked ||
@@ -39,8 +39,8 @@ namespace PFI3
         {
             label1.Enabled =
             label2.Enabled =
-            TXB_A.Enabled =
-            TXB_B.Enabled =
+            NUD_A.Enabled =
+            NUD_B.Enabled =
             BTN_Calculer.Enabled =
             (RDB_F1.Checked ||
              RDB_F2.Checked ||
@@ -53,8 +53,8 @@ namespace PFI3
         {
             label1.Enabled =
             label2.Enabled =
-            TXB_A.Enabled =
-            TXB_B.Enabled =
+            NUD_A.Enabled =
+            NUD_B.Enabled =
             BTN_Calculer.Enabled =
             (RDB_F1.Checked ||
              RDB_F2.Checked ||
@@ -67,8 +67,8 @@ namespace PFI3
         {
             label1.Enabled =
             label2.Enabled =
-            TXB_A.Enabled =
-            TXB_B.Enabled =
+            NUD_A.Enabled =
+            NUD_B.Enabled =
             BTN_Calculer.Enabled =
             (RDB_F1.Checked ||
              RDB_F2.Checked ||
@@ -81,8 +81,8 @@ namespace PFI3
         {
             label1.Enabled =
             label2.Enabled =
-            TXB_A.Enabled =
-            TXB_B.Enabled =
+            NUD_A.Enabled =
+            NUD_B.Enabled =
             BTN_Calculer.Enabled =
             (RDB_F1.Checked ||
              RDB_F2.Checked ||
@@ -93,13 +93,13 @@ namespace PFI3
 
         private void BTN_Clear_Click(object sender, EventArgs e)
         {
-            TXB_A.Clear();
-            TXB_B.Clear();
+            NUD_A.Value = 0;
+            NUD_B.Value = 0;
         }
 
      /*   private void BTN_Calculer_Click(object sender, EventArgs e)
         {
-            if (TXB_A.Text != "" && TXB_B.Text != "")
+            if (NUD_A.Text != "" && NUD_B.Text != "")
             {
                 if (RDB_F1.Checked)
                 {
@@ -124,58 +124,58 @@ namespace PFI3
             }
             else
             {
-                if(TXB_A.Text == "")
+                if(NUD_A.Text == "")
                 {
-                    TXB_A.ForeColor = Color.IndianRed;
+                    NUD_A.ForeColor = Color.IndianRed;
                     label1.ForeColor = Color.IndianRed;
-                    TXB_A.Text = "Veuillez entrer une valeur";
+                    NUD_A.Text = "Veuillez entrer une valeur";
                 }
-                if (TXB_B.Text == "")
+                if (NUD_B.Text == "")
                 {
-                    TXB_B.ForeColor = Color.IndianRed;
+                    NUD_B.ForeColor = Color.IndianRed;
                     label2.ForeColor = Color.IndianRed;
-                    TXB_B.Text = "Veuillez entrer une valeur";
+                    NUD_B.Text = "Veuillez entrer une valeur";
                 }
             }
         }*/
 
         private void TXB_A_MouseDown(object sender, MouseEventArgs e)
         {
-            if(TXB_A.Text == "Veuillez entrer une valeur")
+            if(NUD_A.Text == "Veuillez entrer une valeur")
             {
-                TXB_A.Text = "";
+                NUD_A.Text = "";
                 label1.ForeColor = Color.Black;
-                TXB_A.ForeColor = Color.Black;
+                NUD_A.ForeColor = Color.Black;
             }
         }
 
         private void TXB_B_MouseDown(object sender, MouseEventArgs e)
         {
-            if (TXB_B.Text == "Veuillez entrer une valeur")
+            if (NUD_B.Text == "Veuillez entrer une valeur")
             {
-                TXB_B.Text = "";
+                NUD_B.Text = "";
                 label2.ForeColor = Color.Black;
-                TXB_B.ForeColor = Color.Black;
+                NUD_B.ForeColor = Color.Black;
             }
         }
 
         private void TXB_A_Leave(object sender, EventArgs e)
         {
-            if (TXB_A.Text == "")
+            if (NUD_A.Text == "")
             {
-                TXB_A.ForeColor = Color.IndianRed;
+                NUD_A.ForeColor = Color.IndianRed;
                 label1.ForeColor = Color.IndianRed;
-                TXB_A.Text = "Veuillez entrer une valeur";
+                NUD_A.Text = "Veuillez entrer une valeur";
             }
         }
 
         private void TXB_B_Leave(object sender, EventArgs e)
         {
-            if (TXB_B.Text == "")
+            if (NUD_B.Text == "")
             {
-                TXB_B.ForeColor = Color.IndianRed;
+                NUD_B.ForeColor = Color.IndianRed;
                 label2.ForeColor = Color.IndianRed;
-                TXB_B.Text = "Veuillez entrer une valeur";
+                NUD_B.Text = "Veuillez entrer une valeur";
             }
         }
 
