@@ -42,7 +42,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BTN_Clear = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.NUD_A = new System.Windows.Forms.NumericUpDown();
+            this.NUD_B = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_B)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -53,9 +57,9 @@
             this.groupBox1.Controls.Add(this.RDB_F2);
             this.groupBox1.Controls.Add(this.RDB_F1);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(252, 172);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -65,7 +69,7 @@
             // 
             this.RDB_F5.AutoSize = true;
             this.RDB_F5.Location = new System.Drawing.Point(8, 137);
-            this.RDB_F5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RDB_F5.Margin = new System.Windows.Forms.Padding(4);
             this.RDB_F5.Name = "RDB_F5";
             this.RDB_F5.Size = new System.Drawing.Size(127, 21);
             this.RDB_F5.TabIndex = 4;
@@ -78,7 +82,7 @@
             // 
             this.RDB_F4.AutoSize = true;
             this.RDB_F4.Location = new System.Drawing.Point(8, 108);
-            this.RDB_F4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RDB_F4.Margin = new System.Windows.Forms.Padding(4);
             this.RDB_F4.Name = "RDB_F4";
             this.RDB_F4.Size = new System.Drawing.Size(121, 21);
             this.RDB_F4.TabIndex = 3;
@@ -91,7 +95,7 @@
             // 
             this.RDB_F3.AutoSize = true;
             this.RDB_F3.Location = new System.Drawing.Point(8, 80);
-            this.RDB_F3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RDB_F3.Margin = new System.Windows.Forms.Padding(4);
             this.RDB_F3.Name = "RDB_F3";
             this.RDB_F3.Size = new System.Drawing.Size(166, 21);
             this.RDB_F3.TabIndex = 2;
@@ -104,7 +108,7 @@
             // 
             this.RDB_F2.AutoSize = true;
             this.RDB_F2.Location = new System.Drawing.Point(8, 52);
-            this.RDB_F2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RDB_F2.Margin = new System.Windows.Forms.Padding(4);
             this.RDB_F2.Name = "RDB_F2";
             this.RDB_F2.Size = new System.Drawing.Size(238, 21);
             this.RDB_F2.TabIndex = 1;
@@ -117,7 +121,7 @@
             // 
             this.RDB_F1.AutoSize = true;
             this.RDB_F1.Location = new System.Drawing.Point(8, 23);
-            this.RDB_F1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RDB_F1.Margin = new System.Windows.Forms.Padding(4);
             this.RDB_F1.Name = "RDB_F1";
             this.RDB_F1.Size = new System.Drawing.Size(215, 21);
             this.RDB_F1.TabIndex = 0;
@@ -131,7 +135,7 @@
             this.BTN_Calculer.Enabled = false;
             this.BTN_Calculer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Calculer.Location = new System.Drawing.Point(16, 314);
-            this.BTN_Calculer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_Calculer.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Calculer.Name = "BTN_Calculer";
             this.BTN_Calculer.Size = new System.Drawing.Size(251, 28);
             this.BTN_Calculer.TabIndex = 1;
@@ -143,7 +147,7 @@
             // 
             this.TXB_A.Enabled = false;
             this.TXB_A.Location = new System.Drawing.Point(45, 219);
-            this.TXB_A.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXB_A.Margin = new System.Windows.Forms.Padding(4);
             this.TXB_A.Name = "TXB_A";
             this.TXB_A.Size = new System.Drawing.Size(220, 22);
             this.TXB_A.TabIndex = 2;
@@ -154,7 +158,7 @@
             // 
             this.TXB_B.Enabled = false;
             this.TXB_B.Location = new System.Drawing.Point(45, 258);
-            this.TXB_B.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TXB_B.Margin = new System.Windows.Forms.Padding(4);
             this.TXB_B.Name = "TXB_B";
             this.TXB_B.Size = new System.Drawing.Size(220, 22);
             this.TXB_B.TabIndex = 3;
@@ -197,7 +201,7 @@
             // 
             this.BTN_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTN_Clear.Location = new System.Drawing.Point(16, 353);
-            this.BTN_Clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BTN_Clear.Margin = new System.Windows.Forms.Padding(4);
             this.BTN_Clear.Name = "BTN_Clear";
             this.BTN_Clear.Size = new System.Drawing.Size(251, 28);
             this.BTN_Clear.TabIndex = 7;
@@ -211,24 +215,53 @@
             this.label4.Location = new System.Drawing.Point(-12, 283);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(241, 13);
+            this.label4.Size = new System.Drawing.Size(320, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "_______________________________________";
             // 
-            // PBX_Drawing
+            // NUD_A
             // 
-            this.PBX_Drawing.Location = new System.Drawing.Point(276, 15);
-            this.PBX_Drawing.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.PBX_Drawing.Name = "PBX_Drawing";
-            this.PBX_Drawing.Size = new System.Drawing.Size(452, 367);
-            this.PBX_Drawing.TabIndex = 9;
+            this.NUD_A.DecimalPlaces = 2;
+            this.NUD_A.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.NUD_A.Location = new System.Drawing.Point(106, 220);
+            this.NUD_A.Maximum = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            this.NUD_A.Name = "NUD_A";
+            this.NUD_A.Size = new System.Drawing.Size(120, 22);
+            this.NUD_A.TabIndex = 9;
+            // 
+            // NUD_B
+            // 
+            this.NUD_B.DecimalPlaces = 2;
+            this.NUD_B.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+            this.NUD_B.Location = new System.Drawing.Point(106, 260);
+            this.NUD_B.Maximum = new decimal(new int[] {
+            11,
+            0,
+            0,
+            0});
+            this.NUD_B.Name = "NUD_B";
+            this.NUD_B.Size = new System.Drawing.Size(120, 22);
+            this.NUD_B.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 391);
-            this.Controls.Add(this.PBX_Drawing);
+            this.Controls.Add(this.NUD_B);
+            this.Controls.Add(this.NUD_A);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BTN_Clear);
             this.Controls.Add(this.label3);
@@ -239,11 +272,13 @@
             this.Controls.Add(this.BTN_Calculer);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Inférence";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUD_B)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,6 +300,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BTN_Clear;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.NumericUpDown NUD_A;
+        private System.Windows.Forms.NumericUpDown NUD_B;
     }
 }
 
